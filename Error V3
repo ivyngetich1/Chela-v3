@@ -1,0 +1,357 @@
+prog.kt:3:8: error: unresolved reference: android
+import android.Manifest
+       ^
+prog.kt:4:8: error: unresolved reference: android
+import android.app.PendingIntent
+       ^
+prog.kt:5:8: error: unresolved reference: android
+import android.content.Context
+       ^
+prog.kt:6:8: error: unresolved reference: android
+import android.content.DialogInterface
+       ^
+prog.kt:7:8: error: unresolved reference: android
+import android.content.Intent
+       ^
+prog.kt:8:8: error: unresolved reference: android
+import android.content.pm.PackageManager
+       ^
+prog.kt:9:8: error: unresolved reference: android
+import android.database.Cursor
+       ^
+prog.kt:10:8: error: unresolved reference: android
+import android.location.Location
+       ^
+prog.kt:11:8: error: unresolved reference: android
+import android.location.LocationManager
+       ^
+prog.kt:12:8: error: unresolved reference: android
+import android.media.MediaPlayer
+       ^
+prog.kt:13:8: error: unresolved reference: android
+import android.net.Uri
+       ^
+prog.kt:14:8: error: unresolved reference: android
+import android.os.Build
+       ^
+prog.kt:15:8: error: unresolved reference: android
+import android.os.Bundle
+       ^
+prog.kt:16:8: error: unresolved reference: android
+import android.provider.Settings
+       ^
+prog.kt:17:8: error: unresolved reference: android
+import android.telephony.SmsManager
+       ^
+prog.kt:18:8: error: unresolved reference: android
+import android.util.Log
+       ^
+prog.kt:19:8: error: unresolved reference: android
+import android.view.KeyEvent
+       ^
+prog.kt:20:8: error: unresolved reference: android
+import android.widget.Button
+       ^
+prog.kt:21:8: error: unresolved reference: android
+import android.widget.Toast
+       ^
+prog.kt:22:8: error: unresolved reference: androidx
+import androidx.appcompat.app.AlertDialog
+       ^
+prog.kt:23:8: error: unresolved reference: androidx
+import androidx.appcompat.app.AppCompatActivity
+       ^
+prog.kt:24:8: error: unresolved reference: androidx
+import androidx.core.app.ActivityCompat
+       ^
+prog.kt:25:8: error: unresolved reference: androidx
+import androidx.core.content.ContextCompat
+       ^
+prog.kt:26:12: error: unresolved reference: google
+import com.google.android.gms.location.FusedLocationProviderClient
+           ^
+prog.kt:27:12: error: unresolved reference: google
+import com.google.android.gms.location.LocationServices
+           ^
+prog.kt:28:12: error: unresolved reference: google
+import com.google.android.gms.tasks.OnFailureListener
+           ^
+prog.kt:29:12: error: unresolved reference: google
+import com.google.android.gms.tasks.OnSuccessListener
+           ^
+prog.kt:30:16: error: unresolved reference: coroutines
+import kotlinx.coroutines.NonCancellable
+               ^
+prog.kt:36:49: error: unresolved reference: AppCompatActivity
+class MainActivity(val REQUEST_LOCATION: Int) : AppCompatActivity() {
+                                                ^
+prog.kt:37:21: error: unresolved reference: Button
+   lateinit var b1: Button
+                    ^
+prog.kt:38:22: error: unresolved reference: Button
+    lateinit var b2: Button
+                     ^
+prog.kt:39:26: error: unresolved reference: Button
+    lateinit var danger: Button
+                         ^
+prog.kt:40:28: error: unresolved reference: Button
+    lateinit var accident: Button
+                           ^
+prog.kt:41:15: error: unresolved reference: DatabaseHandler
+    var myDB: DatabaseHandler? = null
+              ^
+prog.kt:44:35: error: unresolved reference: LocationManager
+    lateinit var locationManager: LocationManager
+                                  ^
+prog.kt:47:5: error: 'onCreate' overrides nothing
+    override fun onCreate(savedInstanceState: Bundle?) {
+    ^
+prog.kt:47:47: error: unresolved reference: Bundle
+    override fun onCreate(savedInstanceState: Bundle?) {
+                                              ^
+prog.kt:48:15: error: unresolved reference: onCreate
+        super.onCreate(savedInstanceState)
+              ^
+prog.kt:49:9: error: unresolved reference: setContentView
+        setContentView(R.layout.activity_main)
+        ^
+prog.kt:49:24: error: unresolved reference: R
+        setContentView(R.layout.activity_main)
+                       ^
+prog.kt:50:14: error: unresolved reference: findViewById
+        b1 = findViewById(R.id.button)
+             ^
+prog.kt:50:27: error: unresolved reference: R
+        b1 = findViewById(R.id.button)
+                          ^
+prog.kt:51:14: error: unresolved reference: findViewById
+        b2 = findViewById(R.id.button2)
+             ^
+prog.kt:51:27: error: unresolved reference: R
+        b2 = findViewById(R.id.button2)
+                          ^
+prog.kt:52:16: error: unresolved reference: DatabaseHandler
+        myDB = DatabaseHandler(this)
+               ^
+prog.kt:53:18: error: unresolved reference: findViewById
+        danger = findViewById(R.id.danger)
+                 ^
+prog.kt:53:31: error: unresolved reference: R
+        danger = findViewById(R.id.danger)
+                              ^
+prog.kt:54:20: error: unresolved reference: findViewById
+        accident = findViewById(R.id.accident)
+                   ^
+prog.kt:54:33: error: unresolved reference: R
+        accident = findViewById(R.id.accident)
+                                ^
+prog.kt:55:17: error: unresolved reference: MediaPlayer
+        val mp: MediaPlayer = MediaPlayer.create(
+                ^
+prog.kt:55:31: error: unresolved reference: MediaPlayer
+        val mp: MediaPlayer = MediaPlayer.create(
+                              ^
+prog.kt:56:13: error: unresolved reference: getApplicationContext
+            getApplicationContext(),
+            ^
+prog.kt:57:13: error: unresolved reference: R
+            R.raw.mixkit_retro_emergency_notification_alarm_2970
+            ^
+prog.kt:59:27: error: unresolved reference: getSystemService
+        locationManager = getSystemService(LOCATION_SERVICE) as LocationManager
+                          ^
+prog.kt:59:44: error: unresolved reference: LOCATION_SERVICE
+        locationManager = getSystemService(LOCATION_SERVICE) as LocationManager
+                                           ^
+prog.kt:59:65: error: unresolved reference: LocationManager
+        locationManager = getSystemService(LOCATION_SERVICE) as LocationManager
+                                                                ^
+prog.kt:60:48: error: unresolved reference: LocationManager
+        if (!locationManager.isProviderEnabled(LocationManager.GPS_PROVIDER)) {
+                                               ^
+prog.kt:66:25: error: unresolved reference: Intent
+                val i = Intent(getApplicationContext(), Register::class.java)
+                        ^
+prog.kt:66:32: error: unresolved reference: getApplicationContext
+                val i = Intent(getApplicationContext(), Register::class.java)
+                               ^
+prog.kt:66:57: error: unresolved reference: Register
+                val i = Intent(getApplicationContext(), Register::class.java)
+                                                        ^
+prog.kt:99:19: error: unresolved reference: Cursor
+        val data: Cursor = myDB!!.getListContents()
+                  ^
+prog.kt:101:13: error: unresolved reference: Toast
+            Toast.makeText(this@MainActivity, "no content to show", Toast.LENGTH_SHORT).show()
+            ^
+prog.kt:101:69: error: unresolved reference: Toast
+            Toast.makeText(this@MainActivity, "no content to show", Toast.LENGTH_SHORT).show()
+                                                                    ^
+prog.kt:117:22: error: unresolved reference: Intent
+        val intent = Intent(getApplicationContext(), MainActivity::class.java)
+                     ^
+prog.kt:117:29: error: unresolved reference: getApplicationContext
+        val intent = Intent(getApplicationContext(), MainActivity::class.java)
+                            ^
+prog.kt:118:17: error: unresolved reference: PendingIntent
+        val pi: PendingIntent = PendingIntent.getActivity(
+                ^
+prog.kt:118:33: error: unresolved reference: PendingIntent
+        val pi: PendingIntent = PendingIntent.getActivity(
+                                ^
+prog.kt:119:13: error: unresolved reference: getApplicationContext
+            getApplicationContext(),
+            ^
+prog.kt:122:13: error: unresolved reference: PendingIntent
+            PendingIntent.FLAG_IMMUTABLE
+            ^
+prog.kt:124:18: error: unresolved reference: SmsManager
+        val sms: SmsManager = SmsManager.getDefault()
+                 ^
+prog.kt:124:31: error: unresolved reference: SmsManager
+        val sms: SmsManager = SmsManager.getDefault()
+                              ^
+prog.kt:131:17: error: unresolved reference: Intent
+        val i = Intent(Intent.ACTION_CALL)
+                ^
+prog.kt:131:24: error: unresolved reference: Intent
+        val i = Intent(Intent.ACTION_CALL)
+                       ^
+prog.kt:132:19: error: unresolved reference: Uri
+        i.setData(Uri.parse("tel:$call"))
+                  ^
+prog.kt:133:13: error: unresolved reference: ContextCompat
+        if (ContextCompat.checkSelfPermission(
+            ^
+prog.kt:134:17: error: unresolved reference: getApplicationContext
+                getApplicationContext(),
+                ^
+prog.kt:135:17: error: unresolved reference: Manifest
+                Manifest.permission.CALL_PHONE
+                ^
+prog.kt:136:19: error: unresolved reference: PackageManager
+            ) === PackageManager.PERMISSION_GRANTED
+                  ^
+prog.kt:140:17: error: unresolved reference: Build
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+                ^
+prog.kt:140:42: error: unresolved reference: Build
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+                                         ^
+prog.kt:141:17: error: unresolved reference: requestPermissions
+                requestPermissions(arrayOf<String>(Manifest.permission.CALL_PHONE), 1)
+                ^
+prog.kt:141:52: error: unresolved reference: Manifest
+                requestPermissions(arrayOf<String>(Manifest.permission.CALL_PHONE), 1)
+                                                   ^
+prog.kt:147:13: error: unresolved reference: ActivityCompat
+        if (ActivityCompat.checkSelfPermission(
+            ^
+prog.kt:149:17: error: unresolved reference: Manifest
+                Manifest.permission.ACCESS_FINE_LOCATION
+                ^
+prog.kt:150:19: error: unresolved reference: PackageManager
+            ) !== PackageManager.PERMISSION_GRANTED
+                  ^
+prog.kt:151:16: error: unresolved reference: ActivityCompat
+            && ActivityCompat.checkSelfPermission(
+               ^
+prog.kt:153:17: error: unresolved reference: Manifest
+                Manifest.permission.ACCESS_COARSE_LOCATION
+                ^
+prog.kt:154:19: error: unresolved reference: PackageManager
+            ) !== PackageManager.PERMISSION_GRANTED
+                  ^
+prog.kt:156:13: error: unresolved reference: ActivityCompat
+            ActivityCompat.requestPermissions(
+            ^
+prog.kt:158:33: error: unresolved reference: Manifest
+                arrayOf<String>(Manifest.permission.ACCESS_FINE_LOCATION),
+                                ^
+prog.kt:162:39: error: unresolved reference: FusedLocationProviderClient
+            val mFusedLocationClient: FusedLocationProviderClient =
+                                      ^
+prog.kt:163:17: error: unresolved reference: LocationServices
+                LocationServices.getFusedLocationProviderClient(this)
+                ^
+prog.kt:165:48: error: unresolved reference: OnSuccessListener
+                .addOnSuccessListener(object : OnSuccessListener<Location?> {
+                                               ^
+prog.kt:165:66: error: unresolved reference: Location
+                .addOnSuccessListener(object : OnSuccessListener<Location?> {
+                                                                 ^
+prog.kt:167:21: error: 'onSuccess' overrides nothing
+                    override fun onSuccess(locationGPS: Location?) {
+                    ^
+prog.kt:167:57: error: unresolved reference: Location
+                    override fun onSuccess(locationGPS: Location?) {
+                                                        ^
+prog.kt:175:29: error: unresolved reference: Toast
+                            Toast.makeText(
+                            ^
+prog.kt:178:33: error: unresolved reference: Toast
+                                Toast.LENGTH_SHORT
+                                ^
+prog.kt:183:48: error: unresolved reference: OnFailureListener
+                .addOnFailureListener(object : OnFailureListener {
+                                               ^
+prog.kt:185:21: error: 'onFailure' overrides nothing
+                    override fun onFailure(e: Exception) {
+                    ^
+prog.kt:186:25: error: unresolved reference: Log
+                        Log.d("MapDemoActivity", "Error trying to get last GPS location")
+                        ^
+prog.kt:194:19: error: unresolved reference: AlertDialog
+        var box = AlertDialog.Builder(this)
+                  ^
+prog.kt:198:13: error: unresolved reference: DialogInterface
+            DialogInterface.OnClickListener { dialog: DialogInterface?, which: Int -> Settings.ACTION_LOCATION_SOURCE_SETTINGS  })
+            ^
+prog.kt:198:55: error: unresolved reference: DialogInterface
+            DialogInterface.OnClickListener { dialog: DialogInterface?, which: Int -> Settings.ACTION_LOCATION_SOURCE_SETTINGS  })
+                                                      ^
+prog.kt:198:87: error: unresolved reference: Settings
+            DialogInterface.OnClickListener { dialog: DialogInterface?, which: Int -> Settings.ACTION_LOCATION_SOURCE_SETTINGS  })
+                                                                                      ^
+prog.kt:202:13: error: unresolved reference: DialogInterface
+            DialogInterface.OnClickListener { dialog, id -> NonCancellable.cancel() })
+            ^
+prog.kt:202:61: error: unresolved reference: NonCancellable
+            DialogInterface.OnClickListener { dialog, id -> NonCancellable.cancel() })
+                                                            ^
+prog.kt:216:19: error: unresolved reference: Cursor
+        val data: Cursor = myDB.getListContents()
+                  ^
+prog.kt:218:13: error: unresolved reference: Toast
+            Toast.makeText(requireActivity(),"There is no content", Toast.LENGTH_SHORT).show()
+            ^
+prog.kt:218:69: error: unresolved reference: Toast
+            Toast.makeText(requireActivity(),"There is no content", Toast.LENGTH_SHORT).show()
+                                                                    ^
+prog.kt:228:24: error: unresolved reference: Context
+fun requireActivity(): Context? {
+                       ^
+prog.kt:232:36: error: unresolved reference: Cursor
+private fun Any.getListContents(): Cursor {
+                                   ^
+prog.kt:236:36: error: unresolved reference: KeyEvent
+fun onKeyDown(keyCode: Int, event: KeyEvent) {
+                                   ^
+prog.kt:237:36: error: unresolved reference: KeyEvent
+        if (event.getKeyCode() === KeyEvent.KEYCODE_POWER) {
+                                   ^
+prog.kt:241:30: error: unresolved reference: Intent
+                val intent = Intent(Intent.ACTION_CALL, Uri.parse("tel:" + "102301"))
+                             ^
+prog.kt:241:37: error: unresolved reference: Intent
+                val intent = Intent(Intent.ACTION_CALL, Uri.parse("tel:" + "102301"))
+                                    ^
+prog.kt:241:57: error: unresolved reference: Uri
+                val intent = Intent(Intent.ACTION_CALL, Uri.parse("tel:" + "102301"))
+                                                        ^
+prog.kt:253:27: error: unresolved reference: Intent
+fun startActivity(intent: Intent) {
+                          ^
+prog.kt:258:27: error: unresolved reference: Location
+        private val TODO: Location? = null
+                          ^
